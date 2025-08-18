@@ -1,8 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-function Home() {
-  return <h1>Inicio</h1>;
-}
+import Home from "./pages/Home/Home";
 
 function About() {
   return <h1>Acerca de</h1>;
@@ -15,10 +12,10 @@ function Contact() {
 export default function App() {
   return (
     <BrowserRouter basename="/portfolio">
-      <nav>
+      {/* <nav>
         <Link to="/">Inicio</Link> | <Link to="/about">Acerca de</Link> |{" "}
         <Link to="/contact">Contacto</Link>
-      </nav>
+      </nav> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
