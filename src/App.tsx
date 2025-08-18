@@ -14,7 +14,7 @@ function Contact() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <nav>
         <Link to="/">Inicio</Link> | <Link to="/about">Acerca de</Link> |{" "}
         <Link to="/contact">Contacto</Link>
