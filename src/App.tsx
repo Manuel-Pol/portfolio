@@ -1,17 +1,9 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home/Home";
 
-function About() {
-  return <h1>Acerca de</h1>;
-}
-
-function Contact() {
-  return <h1>Contacto</h1>;
-}
-
 export default function App() {
   return (
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       {/* <nav>
         <Link to="/">Inicio</Link> | <Link to="/about">Acerca de</Link> |{" "}
         <Link to="/contact">Contacto</Link>
@@ -19,8 +11,6 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
