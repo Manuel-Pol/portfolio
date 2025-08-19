@@ -1,0 +1,58 @@
+/* Profile */
+.profile {
+  display: flex;
+  flex-direction: column; /* Coloca elementos verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 100%;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-icon.email:hover {
+  color: #ff565696;
+}
+
+.social-icon.linkedin:hover {
+  color: #33aeff96;
+}
+
+.social-icon.github:hover {
+  color: #b6b6b696;
+}
