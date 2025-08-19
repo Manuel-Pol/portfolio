@@ -1,16 +1,10 @@
-import React from "react";
 import "./style.css";
-import profilePic from "../../assets/Logo_River_Plate.png";
+import Profile from "../../components/Profile";
 
 export default function Home() {
   return (
     <div className="grid-container">
-      <div className="section profile">
-        <div className="profile-pic">
-          <img src={profilePic} alt="Foto" />
-        </div>
-      </div>
-
+      <Profile />
       <div className="section qualifications">
         <div className="content">
           <div className="title">
