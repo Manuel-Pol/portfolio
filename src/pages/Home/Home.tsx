@@ -1,5 +1,6 @@
 import "./style.css";
 import Profile from "../../components/Profile";
+import Carousel from "../../components/Carousel";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Carousel />
     </div>
   );
 }
