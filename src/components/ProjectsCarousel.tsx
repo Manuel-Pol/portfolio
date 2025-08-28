@@ -1,6 +1,6 @@
-import "./styles/Carousel.css";
+import "./styles/ProjectsCarousel.css";
 
-export default function Carousel() {
+export default function ProjectsCarousel() {
   return (
     <div className="carousel">
       <div className="carousel-container">
